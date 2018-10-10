@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">training-app</string>
-    <string name="title_configuration">Configuration</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="fragment_configuration">Fragment configuration</string>
+    <string name="title_action_activity">Activity</string>
+    <string name="title_action_select">Select</string>
 </resources>

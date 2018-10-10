@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item
-        android:id="@+id/navigation_config"
+        android:id="@+id/action_activity"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_configuration" />
+        android:title="@string/title_action_activity" />
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/action_select"
         android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_dashboard" />
-
+        android:title="@string/title_action_select" />
 </menu>

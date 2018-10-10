@@ -10,14 +10,14 @@ class NavigationActivity : AppCompatActivity() {
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
-            R.id.navigation_config -> {
-                message.text = "Hej Alex"
-                val configFragment = ConfigurationFragment.newInstance()
-                launchFragment(configFragment)
+            R.id.action_activity -> {
+                val activityFragment = ActivityFragment.newInstance()
+                launchFragment(activityFragment)
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_dashboard -> {
-                message.setText(R.string.title_dashboard)
+            R.id.action_select -> {
+                val selectFragment = SelectFragment.newInstance()
+                launchFragment(selectFragment)
                 return@OnNavigationItemSelectedListener true
             }
         }
