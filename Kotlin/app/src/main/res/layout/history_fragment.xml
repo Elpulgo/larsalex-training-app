@@ -3,11 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityFragment">
-
-    <fragment
-        android:id="@+id/fragment"
-        android:name="larsalex.training_app.HistoryFragment"
+    tools:context=".HistoryFragment">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view_historic_routines"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent" />
 </FrameLayout>
