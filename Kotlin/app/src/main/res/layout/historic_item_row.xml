@@ -1,56 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="15dp"
-    app:cardBackgroundColor="@color/primary_light"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <TableLayout
+<layout
+    xmlns:xlmns="http://schemas.android.com/apk/res-android"
+    xlmns:tools="http://schemas.android.com/tools">
+    <data xmlns:android="http://schemas.android.com/apk/res/android">
+        <variable
+            type="larsalex.training_app.ui.Activity.History.HistoryViewModel"
+            name="history" />
+    </data>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"
-        android:stretchColumns="*">
-        <TableRow
-            android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        app:cardBackgroundColor="@color/primary_light">
+
+        <TableLayout
             android:layout_width="match_parent"
-            android:layout_marginBottom="15dp">
-            <TextView
-                android:id="@+id/txtDate"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:stretchColumns="*">
+
+            <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/primary"
-                android:padding="1dp"
-                android:textSize="16sp" />
-        </TableRow>
-        <TableRow
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
-            <TextView
-                android:id="@+id/txtName"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:textColor="@color/primary"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/primary_dark"
-                android:textStyle="bold"
-                android:padding="1dp"
-                android:textSize="20sp" />
-            <TextView
-                android:id="@+id/txtDuration"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="1dp"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:textColor="@color/primary_dark"
-                android:padding="1dp"
-                android:textSize="16sp" />
-        </TableRow>
-        <TableRow
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
-            <TextView
-                android:id="@+id/txtRoutineDetail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/primary_dark"
-                android:padding="1dp" />
-        </TableRow>
-    </TableLayout>
-</android.support.v7.widget.CardView>
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtRoutineDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    android:textColor="@color/primary_dark" />
+            </TableRow>
+        </TableLayout>
+    </android.support.v7.widget.CardView>
+</layout>
